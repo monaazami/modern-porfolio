@@ -11,6 +11,20 @@
     margin: 0 0 5px 0;
     background: white;
     transition: all 0.5s ease-out; }
+  .btn-menu.close {
+    transform: rotate(180deg); }
+  .btn-menu.close .btn-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px); }
+  .btn-menu.close .btn-line:nth-child(2) {
+    opacity: 0; }
+  .btn-menu.close .btn-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px); }
+
+.menu .menu-nav {
+  visibility: hidden; }
+
+.menu.show.menu-nav {
+  display: none; }
 
 * {
   box-sizing: border-box; }
@@ -60,7 +74,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #dab027; }
+  color: #d39f11; }
 
 main {
   padding: 4rem;
@@ -70,7 +84,7 @@ main {
     main .icons i {
       padding: 0.4rem; }
       main .icons i:hover {
-        color: #dab027;
+        color: #d39f11;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
