@@ -20,11 +20,73 @@
   .btn-menu.close .btn-line:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -6px); }
 
-.menu .menu-nav {
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
   visibility: hidden; }
-
-.menu.show.menu-nav {
-  display: none; }
+  .menu.show {
+    visibility: visible; }
+  .menu-branding, .menu-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden; }
+  .menu-nav {
+    margin: 0;
+    padding: 0;
+    background-color: #4b3200;
+    list-style: none;
+    transform: translate3d(0, 100%, 0);
+    transition: all 0.5s ease-out; }
+    .menu-nav.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-branding {
+    margin: 0;
+    padding: 0;
+    background-color: #d39f11;
+    list-style: none;
+    transform: translate3d(0, -100%, 0);
+    transition: all 0.5s ease-out; }
+    .menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+    .menu-branding .portrait {
+      width: 280px;
+      height: 280px;
+      background: url(../img/mona.jpg)-20px 0;
+      border-radius: 50%;
+      border: 5px solid #4b3200; }
+  .menu .nav-item {
+    transform: translate3d(-600px, 0, 0);
+    transition: all 0.5s ease-out; }
+    .menu .nav-item.show {
+      transform: translate3d(0, 0, 0); }
+  .menu .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: white;
+    transition: all 0.5s ease-out; }
+    .menu .nav-link:hover {
+      color: #d39f11; }
+  .menu .current {
+    color: #d39f11; }
+  .menu .nav-item:nth-child(1) {
+    transition-delay: 0.1s; }
+  .menu .nav-item:nth-child(2) {
+    transition-delay: 0.2s; }
+  .menu .nav-item:nth-child(3) {
+    transition-delay: 0.3s; }
+  .menu .nav-item:nth-child(4) {
+    transition-delay: 0.4s; }
 
 * {
   box-sizing: border-box; }
