@@ -50,7 +50,7 @@
 		flex-flow: column wrap;
 		align-items: center;
 		justify-content: center;
-		float: left;
+		float: right;
 		width: 50%;
 		height: 100vh;
 		overflow: hidden;
@@ -86,6 +86,42 @@
 			background: url(../img/mona.jpg)-20px 0;
 			border-radius: 50%;
 			border: 5px solid $primary-color;
+			transform: translate3d(600px, 100%, 600px);
+			@include easeOut;
+
+			&:hover {
+				animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+				transform: translate3d(0, 0, 0);
+				backface-visibility: hidden;
+				perspective: 1000px;
+			}
+
+			@keyframes shake {
+				10%,
+				90% {
+					transform: translate3d(-1px, 0, 2px);
+				}
+
+				20%,
+				80% {
+					transform: translate3d(2px, 0, 4px);
+				}
+
+				30%,
+				50%,
+				70% {
+					transform: translate3d(-8px, 10px, 0);
+				}
+
+				40%,
+				60% {
+					transform: translate3d(8px, 0, 10px);
+				}
+			}
+
+			&.show {
+				transform: translate3d(0, 0, 0);
+			}
 		}
 	}
 	.nav-item {
