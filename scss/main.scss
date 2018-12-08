@@ -102,7 +102,7 @@ main {
 	grid-template-columns: repeat(3, 1fr);
 
 	img {
-		widows: 100%;
+		width: 100%;
 		border: 3px white solid;
 
 		&:hover {

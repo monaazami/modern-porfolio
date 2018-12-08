@@ -211,7 +211,7 @@ main {
   grid-gap: .7rem;
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
-    widows: 100%;
+    width: 100%;
     border: 3px white solid; }
     .projects img:hover {
       opacity: 0.5;
@@ -244,6 +244,14 @@ main {
   color: #d39f11;
   height: 100px; }
 
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (min-width: 769) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
+
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
@@ -272,8 +280,12 @@ main {
       background: url(../img/mona-sm.jpg)-35px 0; }
   .about-info {
     grid-template-areas: "bioimg" "bio" "job1" "job2" "job3";
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh; } }
+    margin-top: 10vh; }
+  .projects {
+    grid-template-columns: 1fr; } }
