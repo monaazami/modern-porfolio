@@ -50,7 +50,7 @@
 		flex-flow: column wrap;
 		align-items: center;
 		justify-content: center;
-		float: right;
+		float: left;
 		width: 50%;
 		height: 100vh;
 		overflow: hidden;
@@ -85,7 +85,7 @@
 			height: 280px;
 			background: url(../img/mona.jpg)-20px 0;
 			border-radius: 50%;
-			border: 5px solid $primary-color;
+			border: 3px solid $primary-color;
 			transform: translate3d(600px, 100%, 600px);
 			@include easeOut;
 
