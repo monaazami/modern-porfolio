@@ -112,37 +112,6 @@
   .menu .nav-item:nth-child(4) {
     transition-delay: 0.4s; }
 
-@media screen and (max-width: 768px) {
-  main {
-    align-items: center;
-    text-align: center; }
-    main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem; }
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-    ul.menu-navshow,
-    div.menu-brandingshow {
-      transform: translate3d(0, 0, 0); }
-  .menu-nav {
-    height: 70vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px; }
-  .menu-branding {
-    height: 30vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu-branding .portrait {
-      width: 170px;
-      height: 170px;
-      background: url(../img/mona-sm.jpg)-35px 0; } }
-
-@media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh; } }
-
 * {
   box-sizing: border-box; }
 
@@ -195,7 +164,7 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%; }
+  min-height: calc(100vh-60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons i {
@@ -207,3 +176,73 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 30vh; }
+
+.about-info {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-areas: "bioimg bio bio" "job1 job2 job3";
+  grid-template-columns: 1fr 1fr 1fr; }
+
+.bio-image {
+  grid-area: bioimg;
+  margin: auto;
+  border-radius: 50%;
+  border: 3px solid #d39f11;
+  width: 350px;
+  height: 350px; }
+
+.bio {
+  grid-area: bio;
+  font-size: 1.2rem; }
+
+.job-1 {
+  grid-area: job1; }
+
+.job-3 {
+  grid-area: job3; }
+
+.job {
+  background-color: #553900;
+  padding: 0.5rem;
+  border-bottom: #d39f11 5px solid; }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #372400;
+  color: #d39f11;
+  height: 100px; }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-navshow,
+    div.menu-brandingshow {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 70vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 30vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      width: 170px;
+      height: 170px;
+      background: url(../img/mona-sm.jpg)-35px 0; }
+  .about-info {
+    grid-template-areas: "bioimg" "bio" "job1" "job2" "job3";
+    grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; } }

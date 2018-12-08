@@ -40,6 +40,10 @@
 			background: url(../img/mona-sm.jpg)-35px 0;
 		}
 	}
+	.about-info {
+		grid-template-areas: "bioimg" "bio" "job1" "job2" "job3";
+		grid-template-columns: 1fr;
+	}
 }
 
 @include mediaSm {
