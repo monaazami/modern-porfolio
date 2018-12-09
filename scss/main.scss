@@ -7,7 +7,7 @@
 body {
 	@include background;
 	background-color: $primary-color;
-	color: #ffffff;
+	color: set-text-color($primary-color);
 	height: 100%;
 	margin: 0;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -29,7 +29,7 @@ h3 {
 	}
 }
 a {
-	color: white;
+	color: set-text-color($primary-color);
 	text-decoration: none;
 }
 header {

@@ -28,7 +28,6 @@ function toggleMenu() {
 	}
 }
 
-
 const inputs = document.querySelectorAll('.controls input');
 function handleUpdate() {
 	const suffix = this.dataset.sizing || '';
@@ -36,3 +35,9 @@ function handleUpdate() {
 }
 inputs.forEach((input) => input.addEventListener('change', handleUpdate));
 inputs.forEach((input) => input.addEventListener('mousemove', handleUpdate));
+
+const input = document.getElementById('head');
+input.addEventListener('input', clickedHandler);
+function clickedHandler(e) {
+	console.log(e.target.value);
+}

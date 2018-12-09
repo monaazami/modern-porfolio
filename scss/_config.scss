@@ -1,11 +1,19 @@
-$primary-color: #606060;
+$primary-color: #505050;
 $secondary-color: #ffbb00;
 $show-home-image: true;
-$home-image: url(https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80);
+$home-image: url(https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
 $background-opacity: 0.8;
 
 @mixin easeOut {
 	transition: all 0.5s ease-out;
+}
+
+@function set-text-color($color) {
+	@if (lightness($color) > 40) {
+		@return #000;
+	} @else {
+		@return #fff;
+	}
 }
 
 @mixin background {
