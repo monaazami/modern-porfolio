@@ -5,6 +5,8 @@ const menuBranding = document.querySelector('.menu-branding');
 const menuPortrait = document.querySelector('.portrait');
 const navItems = document.querySelectorAll('.nav-item');
 
+const submitBtn = document.querySelector('.submitBtn');
+
 let showMenu = false;
 menuBtn.addEventListener('click', toggleMenu);
 function toggleMenu() {
@@ -25,3 +27,12 @@ function toggleMenu() {
 		showMenu = false;
 	}
 }
+
+
+const inputs = document.querySelectorAll('.controls input');
+function handleUpdate() {
+	const suffix = this.dataset.sizing || '';
+	document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+}
+inputs.forEach((input) => input.addEventListener('change', handleUpdate));
+inputs.forEach((input) => input.addEventListener('mousemove', handleUpdate));

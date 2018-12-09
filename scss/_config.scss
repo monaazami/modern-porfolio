@@ -1,7 +1,7 @@
-$primary-color: #4b3200;
-$secondary-color: #d39f11;
+$primary-color: #606060;
+$secondary-color: #ffbb00;
 $show-home-image: true;
-$home-image: url(../img/back2.jpg);
+$home-image: url(https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80);
 $background-opacity: 0.8;
 
 @mixin easeOut {
@@ -29,29 +29,25 @@ $background-opacity: 0.8;
 }
 
 @mixin mediaSm {
-	@media screen and (max-width:500px) {
+	@media screen and (max-width: 500px) {
 		@content;
 	}
 }
 
 @mixin mediaMd {
-	@media screen and (max-width:768px) {
+	@media screen and (max-width: 768px) {
 		@content;
 	}
 }
 
 @mixin mediaLg {
-	@media screen and (min-width:769) and (max-width:1170px) {
+	@media screen and (min-width: 769) and (max-width: 1170px) {
 		@content;
 	}
 }
-
 
 @mixin mediaXl {
-	@media screen and (min-width:1171px) {
+	@media screen and (min-width: 1171px) {
 		@content;
 	}
 }
-
-
-
