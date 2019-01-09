@@ -3,12 +3,16 @@
 	"version": "1.0.0",
 	"description": "personal portfolio",
 	"main": "index.js",
+	"homepage": "https://github.com/monaazami/modern-porfolio",
 	"scripts": {
-		"sass": "node-sass -w scss/ -o dist/css/ --recursive"
+		"sass": "node-sass -w scss/ -o dist/css/ --recursive",
+		"deploy": "gh-pages -d dist"
 	},
 	"author": "Mona Azami",
 	"license": "ISC",
 	"dependencies": {
-		"node-sass": "^4.10.0"
+		"gh-pages": "^2.0.1",
+		"node-sass": "^4.10.0",
+		"save": "^2.3.3"
 	}
 }
