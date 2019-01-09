@@ -12,7 +12,7 @@ $background-opacity: 0.8;
 	@if (lightness($color) > 40) {
 		@return #000;
 	} @else {
-		@return #fff;
+		@return #FFFFFF;
 	}
 }
 

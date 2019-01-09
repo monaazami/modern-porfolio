@@ -32,6 +32,17 @@ a {
 	color: set-text-color($primary-color);
 	text-decoration: none;
 }
+.workshop {
+	display: block;
+	max-width: 70%;
+	margin: auto;
+	align-content: center;
+	align-items: center;
+}
+.mySon,
+.codeYourFuture {
+	color: $secondary-color;
+}
 header {
 	position: fixed;
 	//2 is the max (on top)
@@ -69,8 +80,8 @@ main {
 .about-info {
 	display: grid;
 	grid-gap: 50px;
-	grid-template-areas: "bioimg bio bio" "job1 job2 job3";
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "bioimg bio " "job1 job2 ";
+	grid-template-columns: 1fr 1fr;
 }
 .bio-image {
 	grid-area: bioimg;
@@ -82,14 +93,14 @@ main {
 }
 .bio {
 	grid-area: bio;
-	font-size: 1rem;
+	font-size: 1.2rem;
 }
 .job-1 {
 	grid-area: job1;
 }
 
-.job-3 {
-	grid-area: job3;
+.job-2 {
+	grid-area: job2;
 }
 .job {
 	background-color: lighten($primary-color, 2);
