@@ -1,12 +1,12 @@
 {
-	"name": "modern-porfolio",
+	"name": "modern-porfolio2",
 	"version": "1.0.0",
 	"description": "personal portfolio",
 	"main": "index.js",
-	"homepage": "https://monaazami.github.io/modern-porfolio",
+	"homepage": "https://monaazami.github.io/modern-porfolio2",
 	"repository": {
 		"type": "git",
-		"url": "git:https://github.com/monaazami/modern-porfolio.git"
+		"url": "git:https://github.com/monaazami/modern-porfolio2.git"
 	},
 	"scripts": {
 		"sass": "node-sass -w scss/ -o dist/css/ --recursive",
