@@ -4,13 +4,21 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all 0.5s ease-out; }
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
   .btn-menu .btn-line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: #FFFFFF;
-    transition: all 0.5s ease-out; }
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
   .btn-menu.close {
     transform: rotate(180deg); }
   .btn-menu.close .btn-line:nth-child(1) {
@@ -43,7 +51,11 @@
     background-color: #505050;
     list-style: none;
     transform: translate3d(0, 100%, 0);
-    transition: all 0.5s ease-out; }
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
@@ -52,7 +64,11 @@
     background-color: #ffbb00;
     list-style: none;
     transform: translate3d(0, -100%, 0);
-    transition: all 0.5s ease-out; }
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
@@ -62,7 +78,11 @@
       border-radius: 50%;
       border: 3px solid #505050;
       transform: translate3d(600px, 100%, 600px);
-      transition: all 0.5s ease-out; }
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
       .menu-branding .portrait:hover {
         animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
         transform: translate3d(0, 0, 0);
@@ -87,7 +107,11 @@
         transform: translate3d(0, 0, 0); }
   .menu .nav-item {
     transform: translate3d(-600px, 0, 0);
-    transition: all 0.5s ease-out; }
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
   .menu .nav-link {
@@ -98,7 +122,11 @@
     padding: 1rem 0;
     font-weight: 300;
     color: white;
-    transition: all 0.5s ease-out; }
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
     .menu .nav-link:hover {
       color: #ffbb00; }
   .menu .current {
@@ -160,11 +188,20 @@ a {
   max-width: 50%;
   margin: auto;
   align-content: center;
-  align-items: center; }
+  align-items: center;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
   .workshop:hover {
-    background-color: rgba(0, 0, 0, 0.33);
+    background-color: rgba(0, 0, 0, 0.08);
     transform: scale(1.1);
-    transition: all 0.5s ease-out; }
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
 
 .mySon,
 .codeYourFuture {
@@ -182,7 +219,11 @@ main {
       padding: 0.4rem; }
       main .icons i:hover {
         color: #ffbb00;
-        transition: all 0.5s ease-out; }
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out; }
   main#home h1 {
     margin-top: 20vh; }
 
@@ -254,7 +295,11 @@ main {
     .projects img:hover {
       opacity: 0.5;
       border-color: #ffbb00;
-      transition: all 0.5s ease-out; }
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
 
 .btn {
   display: block;
