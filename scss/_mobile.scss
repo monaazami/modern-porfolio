@@ -52,7 +52,7 @@
 	}
 
 	.about-info {
-		grid-template-areas: "bioimg" "bio" "job1" "job2" "job3";
+		grid-template-areas: 'bioimg' 'bio' 'job1' 'job2' 'job3';
 		grid-template-columns: 1fr;
 	}
 	.projects {
@@ -83,6 +83,9 @@
 			width: 100%;
 			line-height: 1.4;
 		}
+	}
+	.scroll-down {
+		left: 20%;
 	}
 	h1,
 	h2,
@@ -144,6 +147,9 @@
 		height: 800px;
 	}
 	.hidden {
+		display: none;
+	}
+	.scroll-down {
 		display: none;
 	}
 	main {
