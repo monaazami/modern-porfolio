@@ -78,24 +78,30 @@ main {
 #about {
 	background-color: rgba(43, 43, 43, 0.3);
 	padding-top: 10vh;
+	img {
+		width: 40%;
+	}
 }
 
 .aboutMe {
 	p {
 		color: #ffffff;
 		width: 80%;
-		line-height: 1.8;
+		line-height: 1.7;
 		display: block;
 		margin: auto;
-		font-size: 18px;
+		font-size: 17px;
 		text-align: justify;
 	}
 }
 .ab {
 	margin-bottom: 0;
 	background: rgba(40, 40, 40, 0.46);
-	padding: 30px 30px 050px 30px;
+	padding: 30px 30px 50px 30px;
 	max-width: 800px;
+	margin: auto;
+	display: block;
+	text-align: center;
 }
 .imgBio {
 	width: 250px;
@@ -117,6 +123,9 @@ main {
 }
 .pad {
 	padding: 4rem;
+}
+.workshop {
+	margin-top: 10vh;
 }
 
 .bio-image {
